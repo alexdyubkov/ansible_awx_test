@@ -4,3 +4,8 @@
     - name: Print message
       debug:
         msg: Hello Ansible AWX
+        
+    - name: Creates directory
+      file:
+        path: /tmp/test
+        state: directory
